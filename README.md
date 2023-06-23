@@ -1,5 +1,6 @@
 MezeMacs
-![image](https://github.com/Menezess42/MezEmacs/assets/67249275/c726348b-93bb-4eb0-8b4d-40c6f40afcd5)
+
+![image](https://github.com/Menezess42/MezEmacas/assets/67249275/2f05f483-90ae-4dd6-93aa-c3edcc24cc4c)
 
 
 It's important to know that I use Windows, so my configuration is based on my operating system.
