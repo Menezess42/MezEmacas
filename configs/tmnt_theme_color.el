@@ -1,6 +1,6 @@
 ;; Set the color theme for the Teenage Mutant Ninja Turtles
-(custom-set-faces
- '(default ((t (:background "#1d1f21" :foreground "#c5c8c6"))))
+(custom-set-faces 
+ '(default ((t (:background "#1d1f21" :foreground "#9966cc"))))
  '(font-lock-comment-face ((t (:foreground "#b9b9b9"))))
  '(font-lock-comment-delimiter-face ((t (:foreground "#b9b9b9"))))
  '(font-lock-string-face ((t (:foreground "#e6a75e"))))
@@ -12,8 +12,8 @@
  '(font-lock-builtin-face ((t (:foreground "#e58d62"))))
   `(flycheck-warning ((t (:underline (:style wave :color "#FFD300")))))
   `(flycheck-error ((t (:underline (:style wave :color "#FF4500")))))
-  `(region ((t (:background "#3d3d3d" :foreground "#FFFFFF"))))
-  `(cursor ((t (:background "#FFFFFF"))))
+  ;; `(region ((t (:background "#3d3d3d" :foreground "#FFFFFF"))))
+  ;; `(cursor ((t (:background "#FFFFFF"))))
   `(line-number ((t (:foreground "#FFA500"))))
   `(line-number-current-line ((t (:foreground "#00FF7F"
                                   :background "#2E2E2E"))))
