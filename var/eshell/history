@@ -1,2 +1,17 @@
 clear
 dotnet watch run
+cd
+ls
+ls -a
+cd .emacs.d/
+clear
+git remote add git@github.com:Menezess42/MezEmacas.git
+git remote
+git remote add origin git@github.com:Menezess42/MezEmacas.git
+clear
+git remote -v
+git add .
+git commit -m "test emacs shell commit"
+git push
+git push origin main
+exit
