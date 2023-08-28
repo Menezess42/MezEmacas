@@ -1,3 +1,13 @@
+;; Carregar configurações personalizadas do arquivo custom.el
+(setq custom-file (expand-file-name "custom.el" user-emacs-directory))
+(when (file-exists-p custom-file)
+    (load custom-file))
+;; Impedir que as configurações personalizadas sejam salvas no init.el
+(setq custom-file (expand-file-name "custom.el" user-emacs-directory))
+(setq-default custom-file custom-file)
+(unless (file-exists-p custom-file)
+    (write-region "" nil custom-file))
+
 (setq inhibit-startup-message t)
 (setq visual-line-mode t)
 (scroll-bar-mode -1)
@@ -319,8 +329,8 @@
 (ivy-posframe-mode 1)
 
 
-(setq custom-config "~/.emacs.d/configs/custom.el")
-(load custom-config)
+;;(setq custom-config "~/.emacs.d/configs/custom.el")
+;;(load custom-config)
 
 (defun my-disable-line-numbers ()
   "Disable line numbers."
@@ -336,15 +346,14 @@
   :config
   (company-quickhelp-mode 1))
 
+(use-package golden-ratio
+  :ensure t
+  :config
+  (golden-ratio-mode ))
 ;; Avaliar o conteúdo do init.el quando a janela do Emacs for aberta
 (defvar my-init-el-start-time (current-time) "Time when init.el was started")
 (defun display-startup-echo-area-message ()
   (message  " ★ Emacs initialized in %.2fs ★ " (float-time (time-subtract (current-time) my-init-el-start-time))))
 
-
-(use-package golden-ratio
-  :ensure t
-  :config
-  (golden-ratio-mode ))
 
 
