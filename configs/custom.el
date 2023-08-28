@@ -1,3 +1,4 @@
+
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -84,20 +85,25 @@
       (path-separator . ":")
       (null-device . "/dev/null"))))
  '(package-selected-packages
-   '(company-jedi key-chord py-autopep8 jupyter tree-macs treemacs lsp-treemacs jedi flycheck blacken elpy lsp-python-ms ivy-posframe posframe doom-modeline org-bullets rainbow-delimiters rainbow-mode centered-window dired-hide-dotfiles dired-open all-the-icons-dired dired-single eshell-git-prompt helpful ivy-prescient counsel ivy-rich ivy which-key dashboard projectile all-the-icons company evil-collection)))
-
-
-
-(if (daemonp) (add-hook 'after-make-frame-functions (lambda (f) (setq initial-buffer-choice *dashboard*))))
-(if (daemonp)
-    (add-hook 'after-make-frame-functions
-              (lambda (frame)
-                (with-selected-frame frame
-                  (set-face-attribute 'default nil :font "FiraCode Nerd Font" :height 140)
-                  (set-face-attribute 'fixed-pitch nil :font "FiraCode Nerd Font" :height 140)
-                  (set-face-attribute 'variable-pitch nil :font "FiraCode Nerd Font" :height 140 :weight 'regular))))
-  ;; Set fonts for non-daemon Emacs
-  (set-face-attribute 'default nil :font "FiraCode Nerd Font" :height 140)
-  (set-face-attribute 'fixed-pitch nil :font "FiraCode Nerd Font" :height 140)
-  (set-face-attribute 'variable-pitch nil :font "FiraCode Nerd Font" :height 140 :weight 'regular))
-    
+   '(company-quickhelp company-jedi key-chord py-autopep8 jupyter tree-macs treemacs lsp-treemacs jedi flycheck blacken elpy lsp-python-ms ivy-posframe posframe doom-modeline org-bullets rainbow-delimiters rainbow-mode centered-window dired-hide-dotfiles dired-open all-the-icons-dired dired-single eshell-git-prompt helpful ivy-prescient counsel ivy-rich ivy which-key dashboard projectile all-the-icons company evil-collection)))
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(default ((t (:background "#1d1f21" :foreground "#9966cc"))))
+ '(cursor ((t (:background "#FFFFFF"))))
+ '(flycheck-error ((t (:underline (:style wave :color "#FF4500")))))
+ '(flycheck-warning ((t (:underline (:style wave :color "#FFD300")))))
+ '(font-lock-builtin-face ((t (:foreground "#e58d62"))))
+ '(font-lock-comment-delimiter-face ((t (:foreground "#b9b9b9"))))
+ '(font-lock-comment-face ((t (:foreground "#b9b9b9"))))
+ '(font-lock-constant-face ((t (:foreground "#e58d62"))))
+ '(font-lock-function-name-face ((t (:foreground "#82b47d"))))
+ '(font-lock-keyword-face ((t (:foreground "#b94d8b"))))
+ '(font-lock-string-face ((t (:foreground "#e6a75e"))))
+ '(font-lock-type-face ((t (:foreground "#c3c080"))))
+ '(font-lock-variable-name-face ((t (:foreground "#6fb4d6"))))
+ '(line-number ((t (:foreground "#FFA500"))))
+ '(line-number-current-line ((t (:foreground "#00FF7F" :background "#2E2E2E"))))
+ '(region ((t (:background "#3d3d3d" :foreground "#FFFFFF")))))

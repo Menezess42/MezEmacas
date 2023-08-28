@@ -17,7 +17,7 @@
 ;;define vars for font size
 (defvar efs/default-font-size 150)
 (defvar efs/default-variable-font-size 150)
-
+(load-file "~/.emacs.d/configs/fonts.el")
 ;;open and closee
 (electric-pair-mode t)
 ;;set ident tab
@@ -425,13 +425,13 @@
       (path-separator . ":")
       (null-device . "/dev/null"))))
  '(package-selected-packages
-   '(company-quickhelp company-jedi key-chord py-autopep8 jupyter tree-macs treemacs lsp-treemacs jedi flycheck blacken elpy lsp-python-ms ivy-posframe posframe doom-modeline org-bullets rainbow-delimiters rainbow-mode centered-window dired-hide-dotfiles dired-open all-the-icons-dired dired-single eshell-git-prompt helpful ivy-prescient counsel ivy-rich ivy which-key dashboard projectile all-the-icons company evil-collection)))
+   '(golden-ratio company-quickhelp company-jedi key-chord py-autopep8 jupyter tree-macs treemacs lsp-treemacs jedi flycheck blacken elpy lsp-python-ms ivy-posframe posframe doom-modeline org-bullets rainbow-delimiters rainbow-mode centered-window dired-hide-dotfiles dired-open all-the-icons-dired dired-single eshell-git-prompt helpful ivy-prescient counsel ivy-rich ivy which-key dashboard projectile all-the-icons company evil-collection)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(default ((t (:background "#1d1f21" :foreground "#c5c8c6"))))
+ '(default ((t (:background "#1d1f21" :foreground "#9966cc"))))
  '(cursor ((t (:background "#FFFFFF"))))
  '(flycheck-error ((t (:underline (:style wave :color "#FF4500")))))
  '(flycheck-warning ((t (:underline (:style wave :color "#FFD300")))))
