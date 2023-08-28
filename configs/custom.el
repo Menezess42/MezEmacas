@@ -85,7 +85,7 @@
       (path-separator . ":")
       (null-device . "/dev/null"))))
  '(package-selected-packages
-   '(company-quickhelp company-jedi key-chord py-autopep8 jupyter tree-macs treemacs lsp-treemacs jedi flycheck blacken elpy lsp-python-ms ivy-posframe posframe doom-modeline org-bullets rainbow-delimiters rainbow-mode centered-window dired-hide-dotfiles dired-open all-the-icons-dired dired-single eshell-git-prompt helpful ivy-prescient counsel ivy-rich ivy which-key dashboard projectile all-the-icons company evil-collection)))
+   '(golden-ratio company-quickhelp company-jedi key-chord py-autopep8 jupyter tree-macs treemacs lsp-treemacs jedi flycheck blacken elpy lsp-python-ms ivy-posframe posframe doom-modeline org-bullets rainbow-delimiters rainbow-mode centered-window dired-hide-dotfiles dired-open all-the-icons-dired dired-single eshell-git-prompt helpful ivy-prescient counsel ivy-rich ivy which-key dashboard projectile all-the-icons company evil-collection)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
